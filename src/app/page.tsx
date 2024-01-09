@@ -1,10 +1,11 @@
 import styles from './page.module.css';
+import Calculator from '@/Components/Organisms/Calculator/Calculator.component';
 
 const Home = () => {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>Age Calculator App</p>
+        <Calculator />
       </div>
     </main>
   );
