@@ -1,0 +1,67 @@
+@import '@styles/variables.scss';
+
+.calc {
+  margin: 0 auto;
+  width: 84rem;
+  padding: 5.6rem;
+  border-radius: 24px 24px 200px 24px;
+  background-color: $color-white;
+}
+
+.form {
+  display: flex;
+  gap: 3.2rem;
+  padding-bottom: 4.75rem;
+  border-bottom: 1px solid $color-grey;
+  position: relative;
+}
+
+.formLabel {
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing-sm;
+  text-transform: uppercase;
+  color: $color-grey;
+}
+
+.formInput {
+  padding: 1.2rem 2.4rem;
+  font-family: inherit;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-md;
+  width: 16rem;
+}
+
+.formInputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.formIcon {
+  color: red;
+}
+
+.formSubmitIconBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.6rem;
+  height: 9.6rem;
+  background-color: $color-primary;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -4.8rem;
+  right: 0;
+}
+// new component
+.numYears,
+.numMonths,
+.numDays {
+  color: $color-primary;
+}
+.heading {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-xbold;
+  font-style: italic;
+  line-height: $line-height-heading;
+  letter-spacing: $letter-spacing-xs;
+}
