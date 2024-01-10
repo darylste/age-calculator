@@ -39,7 +39,7 @@ const Home = () => {
       );
       setYearsPassed(Math.floor(daysElapsed / 365));
       setMonthsPassed(Math.floor((daysElapsed % 365) / 31));
-      setDaysPassed(Math.floor((daysElapsed % 365) % 31) - 1);
+      setDaysPassed(Math.floor((daysElapsed % 365) % 31));
     }
   };
 

@@ -32,26 +32,27 @@ Users should be able to:
 
 ### Screenshot
 
-_Screenshot of the working application will go here_
+Page Design
+![Age Calculator Home Page](https://github.com/darylste/age-calculator/blob/main/public/age-calc.jpeg)
+Working Example
+![Age Calculator Working Page](https://github.com/darylste/age-calculator/blob/main/public/age-calc-example.jpeg)
+Error States
+![Age Calculator Error States](https://github.com/darylste/age-calculator/blob/main/public/age-calc-err.jpeg)
 
 ### Links
 
-- GitHub Repo: _GitHub Link Here_
-- Live Solution: _Solution Link Here_
-
-## Process
+- GitHub Repo: [Age Calculator GitHub](https://github.com/darylste/age-calculator)
+- Live Solution: [Age Calculator Live](https://age-calculator-darylste.vercel.app/)
 
 ### Technologies
 
 - [Next.js](https://nextjs.org/)
-
-### Concepts Learned/Reviewed
-
-- _Add things learned here_
+  The Age Calculator Application is a simple one page application built using Next.js. This allows for quick and easy development and deployment.
 
 ### Useful Resources
 
-- _Add any resources that were useful during the challenge_
+- [Classnames](https://www.npmjs.com/package/classnames) - I used the classnames package to easily add/remove class names based on logic e.g. for error state styling.
+- [How to Check If Date is Valid in Typescript?](https://www.spguides.com/check-if-date-is-valid-in-typescript/) - This article discusses different methods of checking if a date is valid. I used this article to validate the input date and in turn display error messages/state when the entered date is invalid.
 
 ## Author
 
