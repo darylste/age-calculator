@@ -29,15 +29,38 @@
   font-weight: $font-weight-bold;
   font-size: $font-size-md;
   width: 16rem;
+  border-radius: 8px;
+  border: 1.5px solid $color-grey-light;
+
+  &Box {
+    display: flex;
+    gap: 8px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    border: 1.5px solid $color-primary;
+  }
+}
+
+.formInputError {
+  border: 1.5px solid $color-error;
+}
+
+.errMsg {
+  color: $color-error;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 
 .formInputBox {
   display: flex;
   flex-direction: column;
-}
-
-.formIcon {
-  color: red;
 }
 
 .formSubmitIconBg {
@@ -51,6 +74,11 @@
   position: absolute;
   bottom: -4.8rem;
   right: 0;
+
+  &:hover,
+  &:active {
+    background-color: $color-black;
+  }
 }
 // new component
 .numYears,
