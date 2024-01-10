@@ -12,6 +12,7 @@ html {
 
 body {
   font-size: $font-size-sm;
+  font-style: italic;
 }
 
 html,
@@ -25,7 +26,17 @@ body {
   background-color: $color-grey-light;
 }
 
+label {
+  font-style: normal;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

@@ -9,7 +9,7 @@ const Calculator = () => {
         <div className={styles.formInputBox}>
           <label
             htmlFor='day'
-            className={styles.formLabel}
+            className={`${styles.formLabel} ${styles.errMsg}`}
           >
             Day
           </label>
@@ -19,8 +19,14 @@ const Calculator = () => {
             placeholder='DD'
             min={1}
             max={31}
-            className={styles.formInput}
+            className={`${styles.formInput} ${styles.formInputError}`}
           />
+          <p
+            id='dayErrMsg'
+            className={styles.errMsg}
+          >
+            Must be a valid day
+          </p>
         </div>
 
         <div className={styles.formInputBox}>
@@ -38,6 +44,12 @@ const Calculator = () => {
             max={12}
             className={styles.formInput}
           />
+          <p
+            id='monthErrMsg'
+            className={`${styles.errMsg} ${styles.hidden}`}
+          >
+            Must be a valid month
+          </p>
         </div>
 
         <div className={styles.formInputBox}>
@@ -55,6 +67,12 @@ const Calculator = () => {
             max={2024}
             className={styles.formInput}
           />
+          <p
+            id='yearErrMsg'
+            className={`${styles.errMsg} ${styles.hidden}`}
+          >
+            Must be in the past
+          </p>
         </div>
         <div className={styles.formSubmitIconBg}>
           <Image
